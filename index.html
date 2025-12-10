@@ -11,11 +11,21 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <nav class="navbar navbar-expand text-white">
       <div class="container-fluid">
-        <a href="" class="navbar-brand">Navbar</a>
+        <a href="" class="navbar-brand">
+          <img
+            src="img/crescent-moon.svg"
+            class="astra-logo"
+            alt="Logo da Astra"
+          />
+          <span class="astra-type">Astra</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -30,36 +40,50 @@
 
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="navbar-nav me-auto mb-2 lg-0">
-            <li class="nav-item"><a href="#1" class="nav-link">Item 1</a></li>
-            <li class="nav-item"><a href="#2" class="nav-link">Item 2</a></li>
-            <li class="nav-item"><a href="#3" class="nav-link">Item 3</a></li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                class="nav-link dropdown-toggle"
-              >
-                Dropdown
+            <li class="nav-item">
+              <a href="#cardapio" class="nav-link">Ver cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reserva" class="nav-link">Fazer reserva</a>
+            </li>
+            <li class="nav-item">
+              <a href="pr" class="nav-link">Perguntas frequentes</a>
+            </li>
+            <li class="nav-item">
+              <a href="pr" class="nav-link">Contato/localização</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://facebook.com" class="nav-link">
+                <img src="img/facebook.svg" alt="Link do Facebook" />
               </a>
-              <ul class="dropdown-menu">
-                <li><a href="#drop1" class="dropdown-item">Item 1</a></li>
-                <li><a href="#drop2" class="dropdown-item">Item 2</a></li>
-                <li><a href="#drop3" class="dropdown-item">Item 3</a></li>
-              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="https://instagram.com" class="nav-link">
+                <img src="img/instagram.svg" alt="Link do Instagram" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mailto:restaurante.astra@example.com" class="nav-link"
+                ><img src="img/message.svg" alt="Link do Email" />
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <main class="m-auto">
+    <main style="margin: 0% 10%">
       <div class="container d-flex">
-
-          <div class="col-4 overflow-hidden border rounded-2" style="height: min-content;">
-            <img src="img/grande.jpg" style="object-fit: fill; object-position: 2rem 2rem 5rem 6rem;" alt="Restaurante acomodante | @stankuns em flickr.com - autoria da foto">
+        <div
+          class="col-6 overflow-hidden border rounded-2"
+          style="height: min-content"
+        >
+          <img
+            src="img/grande.jpg"
+            style="transform: translateX(-40%)"
+            alt="Restaurante acomodante | @stankuns em flickr.com - autoria da foto"
+          />
         </div>
-        <div class="col-4" style="padding-left: 4rem">
+        <div class="col-6 ps-4">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
             convallis ante, et blandit mauris feugiat a. Pellentesque euismod
@@ -115,7 +139,6 @@
             vel sem. Maecenas rhoncus sollicitudin tempor. Vestibulum vel
             tristique odio. Aliquam ut enim non nisl elementum cursus.
           </p>
-
         </div>
       </div>
     </main>

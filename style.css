@@ -1,0 +1,11 @@
+.astra-logo {
+  height: 3ch;
+  stroke: white;
+}
+.astra-type {
+    font-weight: 300;
+    margin-left: 1rem;
+}
+a.nav-link > img {
+  height: 3ch;
+}
