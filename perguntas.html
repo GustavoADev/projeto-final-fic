@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Astra</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg text-white">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="img/crescent-moon.svg"
+            class="astra-logo"
+            alt="Logo da Astra"
+          />
+          <span class="astra-type">Astra</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarItems"
+          aria-controls="navbarItems"
+          aria-expanded="false"
+          aria-label="Acionar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="navbar-nav me-auto mb-2 lg-0">
+            <li class="nav-item">
+              <a href="cardapio.html" class="nav-link">Ver cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a href="reserva.html" class="nav-link">Fazer reserva</a>
+            </li>
+            <li class="nav-item">
+              <a href="perguntas.html" class="nav-link">Perguntas frequentes</a>
+            </li>
+            <li class="nav-item">
+              <a href="contato.html" class="nav-link">Contato/localização</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://facebook.com" class="nav-link">
+                <img src="img/facebook.svg" alt="Link do Facebook" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://instagram.com" class="nav-link">
+                <img src="img/instagram.svg" alt="Link do Instagram" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mailto:restaurante.astra@example.com" class="nav-link"
+                ><img src="img/message.svg" alt="Link do Email" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>Cardápio</h2>
+        <div class="accordion" id="perguntas">
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp_um" aria-expanded="true" aria_controls="exp_um">Botão 1</button></h2>
+                <div id="exp_um" class="accordion_collapse collapse show" data-bs-parent="#perguntas">
+                    <div class="accordion-body">
+                        <p>Texto do corpo 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp_dois" aria-expanded="true" aria_controls="exp_dois">Botão 2</button></h2>
+                <div id="exp_dois" class="accordion_collapse collapse" data-bs-parent="#perguntas">
+                    <div class="accordion-body">
+                        <p>Texto do corpo 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp_tres" aria-expanded="true" aria_controls="exp_tres">Botão 3</button></h2>
+                <div id="exp_tres" class="accordion_collapse collapse" data-bs-parent="#perguntas">
+                    <div class="accordion-body">
+                        <p>Texto do corpo 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="fixed-bottom text-center bg-body-tertiary p-2">
+      <h3>Copyright &copy; Astra <span id="ano"></span></h3>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
